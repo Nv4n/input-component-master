@@ -1,34 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+	return (
+		<div className="px-2 py-1">
+			<h1 className="font-['Poppins'] text-2xl font-medium">Inputs</h1>
+			<footer className="mx-1 my-4">
+				<span className="font-['Montserrat'] text-sm text-[#A9A9A9]">
+					created by{" "}
+					<a
+						className="font-black underline"
+						href="https://github.com/Nv4n/"
+					>
+						Nv4n
+					</a>{" "}
+					- devChallenges.io
+				</span>
+			</footer>
+		</div>
+	);
 }
 
-export default App
+export default App;
